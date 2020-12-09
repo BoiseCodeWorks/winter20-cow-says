@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Cow-Says</title>
+</head>
+
+<body>
+  <header class="container-fluid bg-primary text-center p-4 text-light">
+    <div class="row">
+      <div class="col">
+        <h1>Welcome to the Farm</h1>
+      </div>
+    </div>
+  </header>
+  <main class="container pt-5">
+    <div class="row">
+      <div class="col">
+        <div id="buttons">
+          <button type="button" class="btn btn-outline-primary" onclick="speak('cow', 'moo')">Cow</button>
+          <button type="button" class="btn btn-outline-warning" onclick="speak('chicken', 'cluck')">Chicken</button>
+          <button type="button" class="btn btn-outline-success" onclick="speak()">Duck</button>
+          <button type="button" class="btn btn-outline-dark" onclick="speak()">Tim</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center" id="result">
+        <h3>THE <span id="name">______</span> SAYS <span id="sound">______</span></h3>
+      </div>
+    </div>
+  </main>
+  <footer class="container-fluid bg-primary text-center text-light">
+    <div class="row">
+      <div class="col">
+        <p>Made with ♥ By Codeworks</p>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
